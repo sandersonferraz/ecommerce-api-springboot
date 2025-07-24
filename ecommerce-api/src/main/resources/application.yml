@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ecommerce-api
+  profiles:
+    active: dev

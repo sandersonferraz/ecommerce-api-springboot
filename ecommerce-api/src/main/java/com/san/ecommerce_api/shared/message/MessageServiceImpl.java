@@ -15,5 +15,4 @@ public class MessageServiceImpl implements MessageService {
   public String getMessage(String code, Object... args) {
     return messageSource.getMessage(code, args, Locale.getDefault());
   }
-
 }

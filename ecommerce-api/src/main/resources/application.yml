@@ -34,6 +34,10 @@ spring:
     out-of-order: true
     validate-on-migrate: true
 
+  messages:
+    basename: messages
+    encoding: UTF-8
+
 logging:
   level:
     root: INFO

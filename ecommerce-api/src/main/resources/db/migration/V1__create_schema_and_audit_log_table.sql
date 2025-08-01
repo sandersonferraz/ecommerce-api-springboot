@@ -8,3 +8,5 @@ CREATE TABLE IF NOT EXISTS ecommerce.audit_log (
     user_agent       TEXT,
     created_at       TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+CREATE INDEX IF NOT EXISTS idx_audit_log_user_id ON ecommerce.audit_log(user_id);

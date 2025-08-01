@@ -56,3 +56,8 @@ management:
 info:
   app: Ecommerce API
   web: http://localhost:8080/v1/api/ecommerce
+
+security:
+  jwt:
+    secretKey: ${JWT_SECRET}
+    accessTokenExpirationMs: ${JWT_EXPIRATION}

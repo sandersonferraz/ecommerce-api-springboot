@@ -180,7 +180,7 @@ class MessageServiceImplTest {
             .hasMessageContaining(key);
   }
 
-  // --- Helper comum para todos os testes ---
+
   private void assertMessage(String key, String expected, Object... args) {
     extracted(expected);
     when(messageSource.getMessage(eq(key), eq(args), ArgumentMatchers.any()))
